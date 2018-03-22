@@ -9,11 +9,21 @@ public class FirstSample2 {
 
 	}
 
-	FirstSample2() {
+	private String m_Name = "";
 
+	FirstSample2(String a_name) {
+		this.m_Name = a_name;
+	}
+	FirstSample2() {
+		this.m_Name = "sm2";
 	}
 
-	void run() {
-		System.out.println("Start My Git History.");
+	public void run() {
+		System.out.println("Start My Git History.2");
+		System.out.println("My name is "+m_Name);
+	}
+
+	public String getName() {
+		return m_Name;
 	}
 }
